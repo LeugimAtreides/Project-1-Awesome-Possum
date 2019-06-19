@@ -1,157 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Pupper-Pet Entertainment TV</title>
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pupper-Pet Entertainment TV</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  <!-- Material Icons CDN -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Firebase CDNs -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <!-- Firebase CDNs -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
 
-  <!-- fontAwesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <!-- fontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
-  <!-- Slick Carousel CSS -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-  <!-- Our styling -->
-  <link rel="stylesheet" href="assets/style.css">
+    <!-- Our styling -->
+    <link rel="stylesheet" href="assets/style.css">
 
-  <!-- Demo illustration of the puppy is from: https://unsplash.com/photos/qO-PIF84Vxg -->
-  <!-- Background bokeh image is from: https://www.pexels.com/photo/blur-blurred-bokeh-colors-938967/ -->
+    <!-- Demo illustration of the puppy is from: https://unsplash.com/photos/qO-PIF84Vxg -->
+    <!-- Background bokeh image is from: https://www.pexels.com/photo/blur-blurred-bokeh-colors-938967/ -->
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <!-- Dropdown from navigation bar -->
-  <nav class="navStick">
+    <!-- Dropdown from navigation bar -->
+    <nav class="navStick">
 
-    <!-- -----------PASSWORD INPUT FIELD------------------------------------------------------------------------------------------------------------------------------------ -->
+      <!-- -----------PASSWORD INPUT FIELD------------------------------------------------------------------------------------------------------------------------------------ -->
 
-    <!-- ASSUMING THAT THE FORM WILL GO HERE -MIGUEL -->
-    <!-- password field: For whoever is making the form simply place these in their appropriate places when creating the form -->
+      <!-- ASSUMING THAT THE FORM WILL GO HERE -MIGUEL -->
+      <!-- password field: For whoever is making the form simply place these in their appropriate places when creating the form -->
 
 
-    <!-- and to the side of each password make sure to create an icon that will be a button to show the password -->
-    <!-- <input type="button" id="show-password">Show Password -->
+      <!-- and to the side of each password make sure to create an icon that will be a button to show the password -->
+      <!-- <input type="button" id="show-password">Show Password -->
 
-    <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+      <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-    <!-- Dropdown -->
-    <!-- Navigation bar -->
-    <div class="nav-wrapper purple">
-      <div class="container">
-        <a href="#" class="brand-logo">Pupper</a>
+      <!-- Dropdown -->
+      <!-- Navigation bar -->
+      <div class="nav-wrapper purple">
+        <div class="container">
+          <a href="#" class="brand-logo">Pupper</a>
 
-        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-          <i class="material-icons">menu</i>
-        </a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+            <i class="material-icons">menu</i>
+          </a>
 
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#about-us">About Us</a></li>
-          <li><a href="#contact-us">Contact</a></li>
-          <!-- Modal Trigger -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-us">Contact</a></li>
+            <!-- Modal Trigger -->
 
-          <li>
-            <a class="waves-effect waves-light btn modal-trigger #f8bbd0 pink lighten-4" href="#modal2">Login</a>
-          </li>
-          <li>
-            <a class="waves-effect waves-light btn modal-trigger #90caf9 blue #64b5f6 blue lighten-1" href="#modal1"><i
-                class="material-icons">account_box</i></a>
-          </li>
-      </div>
-    </div>
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-      <div class="modal-content #e3f2fd blue lighten-5">
-        <h4 class=>Enter Info</h4>
-        <label class="pink lighten-4">Enter Human and Pet Information</label>
-        <input placeholder="Username" id="username" type="text" class="validate">
-        <input placeholder="Email" type="text" class="validate">
-        <input placeholder="Pet Name" id="petname" type="text" class="validate">
-        <div>
-          <p>
-            <p>Pet type</p>
-            <label>
-              <input type="checkbox" />
-              <span>Dog</span>
-            </label>
-          </p>
-          <label>
-            <input type="checkbox" />
-            <span>Cat</span>
-          </label>
-          </p>
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span>Bird</span>
-            </label>
-          </p>
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span>Other</span>
-            </label>
-          </p>
+            <li>
+              <a class="waves-effect waves-light btn modal-trigger #f8bbd0 pink lighten-4" href="#modal2">Login</a>
+            </li>
+            <li>
+              <a class="waves-effect waves-light btn modal-trigger #90caf9 blue #64b5f6 blue lighten-1"
+                href="#modal1"><i class="material-icons">account_box</i></a>
+            </li>
         </div>
-        <p>
-          <label class="pink lighten-4">Enter Password</label>
-          <input type="password" value="password" class="password" id="password-confirm-input">
-          <label class="pink lighten-4">Confirm Password</label>
-          <input type="password" value="password" class="password" id="returning-password-input">
       </div>
-      <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-pink btn-flat #f8bbd0 pink lighten-4">Sign
-          Up</a>
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content #e3f2fd blue lighten-5">
+          <h4 class=>Enter Info</h4>
+          <label class="pink lighten-4">Enter Human and Pet Information</label>
+          <input placeholder="Username" id="username" type="text" class="validate">
+          <input placeholder="Email" type="text" class="validate">
+          <input placeholder="Pet Name" id="petname" type="text" class="validate">
+          <div>
+            <p>
+              <p>Pet type</p>
+              <label>
+                <input type="checkbox" />
+                <span>Dog</span>
+              </label>
+            </p>
+            <label>
+              <input type="checkbox" />
+              <span>Cat</span>
+            </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Bird</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Other</span>
+              </label>
+            </p>
+          </div>
+          <p>
+            <label class="pink lighten-4">Enter Password</label>
+            <input type="password" value="password" class="password" id="password-confirm-input">
+            <label class="pink lighten-4">Confirm Password</label>
+            <input type="password" value="password" class="password" id="returning-password-input">
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-pink btn-flat #f8bbd0 pink lighten-4">Sign
+            Up</a>
 
+        </div>
       </div>
-    </div>
-    </li>
-    </ul>
+      </li>
+      </ul>
 
-    <!-- second modal -->
+      <!-- second modal -->
 
-    <div id="modal2" class="modal">
-      <div class="modal-content #e3f2fd blue lighten-5">
-        <h4 class=>Enter Login Information</h4>
-        <label class="pink lighten-4">Enter Email</label>
-        <input placeholder="Email" type="text" class="validate">
+      <div id="modal2" class="modal">
+        <div class="modal-content #e3f2fd blue lighten-5">
+          <h4 class=>Enter Login Information</h4>
+          <label class="pink lighten-4">Enter Email</label>
+          <input placeholder="Email" type="text" class="validate">
 
 
-        <p>
-          <label class="pink lighten-4">Enter Password</label>
-          <input type="password" value="password" class="password" id="password-confirm-input">
+          <p>
+            <label class="pink lighten-4">Enter Password</label>
+            <input type="password" value="password" class="password" id="password-confirm-input">
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-pink btn-flat #f8bbd0 pink lighten-4">Sign
+            Up</a>
+
+        </div>
       </div>
-      <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-pink btn-flat #f8bbd0 pink lighten-4">Sign
-          Up</a>
-
-      </div>
-    </div>
-    </li>
-    </ul>
+      </li>
+      </ul>
 
 
-  </nav>
+    </nav>
 
 
-  <!-- Login modal -->
+    <!-- Login modal -->
 
-  <!-- <div id="modal2" class="modal">
+    <!-- <div id="modal2" class="modal">
     <div class="modal-content #e3f2fd blue lighten-5">
       <h4 class=>Enter Information</h4>
       <label class="pink lighten-4">Enter Login Information</label>
@@ -160,301 +160,301 @@
       <div> -->
 
 
-  <!-- sidenav for mobile -->
+    <!-- sidenav for mobile -->
 
-  <ul class="sidenav #fce4ec pink lighten-5" id="mobile-nav">
-    <li>test</li>
-    <li>
-      <a class="waves-effect waves-light btn modal-trigger #90caf9 blue #64b5f6 blue lighten-1"
-        href="#modal1">Account</a>
-    </li>
-    <li><a href="#about-us">About Us</a></li>
-    <li><a href="#contact-us">Contact</a></li>
-    <!-- Modal Trigger -->
-
-
-  </ul>
+    <ul class="sidenav #fce4ec pink lighten-5" id="mobile-nav">
+      <li>test</li>
+      <li>
+        <a class="waves-effect waves-light btn modal-trigger #90caf9 blue #64b5f6 blue lighten-1"
+          href="#modal1">Account</a>
+      </li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#contact-us">Contact</a></li>
+      <!-- Modal Trigger -->
 
 
+    </ul>
 
 
 
-  <!-- Main div with project logo and introduction -->
-  <div id="container" class="container">
-    <div class="row content">
-      <div class="col s12 l6" id="content-text">
-        <h1>Welcome to Pupper!</h1>
-        <hr class="divider-line">
-        <p id="slogan">The Ultimate Pet Entertainment TV</p>
-        <!-- Gave a pulse on the Demo button -->
-        <a href="#carousel-main" class="waves-effect waves-light btn-large watch-button pulse"><i
-            class="fas fa-paw"></i>
-          Watch the
-          Demo!</a>
-      </div>
-      <!-- MAIN IMAGE -->
-      <div class="col s12 l6">
-        <div class="card-image">
-          <!-- Wave effect added onto image -->
-          <a class="waves-effect waves-light circle" href="#">
-            <img src="assets/images/pupper.png" class=" responsive-image" id="illustration-main" alt="Pupper logo">
-          </a>
-        </div>
-        <!-- MAIN IMAGE -->
-      </div>
-      <div class="row">
-        <div class="col s12">
-          <div><a href="#about-us"><i id="scroll-icon" class="material-icons">expand_more</i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Main div -->
-  <div id="container" class="container">
-    <div class="row content">
-      <div class="col s12 l6" id="content-text">
-        <h1>Hello <span id="username"></span><span id="petname"></span>!</h1>
-        <hr class="divider-line">
-        <p id="slogan">Welcome to your personalized Pet TV!</p>
-      </div>
-      <!-- MAIN IMAGE -->
-      <div class="col s12 l6">
-        <div class="card-image">
-          <!-- Wave effect added onto image -->
-          <a class="waves-effect waves-light circle" href="#">
-            <img src="assets/images/pupper.png" class=" responsive-image" id="illustration-main" alt="Pupper logo">
-          </a>
-        </div>
-        <!-- MAIN IMAGE -->
-      </div>
-      <div class="row">
-        <div class="col s12">
-          <div><a href="#about-us"><i id="scroll-icon" class="material-icons">expand_more</i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="container wrapper" id="browse">
-    <h3>Browse Videos</h3>
-    <hr class="divider-line">
-    <div id="carousel-main">
-      <nav>
-        <!-- added light blue to the searchbar -->
-        <div class="nav-wrapper">
-          <form id="search-bar">
-            <!-- added light purple to the searchbar -->
-            <div class="input-field pink accent-2 z-depth-3" id="youtube-search">
-              <input id="search" type="search" required>
-              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-              <i class="material-icons">close</i>
-            </div>
-          </form>
-        </div>
-      </nav>
-      <div class="slick-carousel">
-        <div class="video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Ry2b_XLAXR8"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-
-      <a class="waves-effect waves-light btn-large favorite-button"><i class="fas fa-heart"></i> Add to Favorites </a>
-    </div>
-  </div>
-
-  <div class="container wrapper" id="favorites">
-    <h3>Favorite Videos</h3>
-    <hr class="divider-line">
-    <div id="favorite-videos">
-    </div>
-  </div>
-  <div class="container wrapper" id="playlist">
-    <h3>Playlist</h3>
-    <hr class="divider-line">
-  </div>
-
-  <div class="container wrapper" id="about-us">
-    <h3>About Us</h3>
-    <hr class="divider-line">
-    <div class="row row-image-left">
-      <div class="col s12 m6 l4 image">
-        <div id="f1_container">
-          <div id="f1_card" class="shadow">
-            <div class="front face">
-              <img class="circular--square" src="assets/images/West.png" class="responsive-img" alt="Pup">
-            </div>
-            <div class="back face center">
-              <img class="circular--square" src="assets/images/nico.jpg" class="responsive-img" alt="Pup">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m6 l8 paragraph">
-        <h1 class="names">Nico & West</h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore
-        magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse in. Consectetur adipiscing elit duis
-        tristique sollicitudin nibh sit amet. Diam sit amet nisl suscipit.
-      </div>
-    </div>
-
-    <div class="row row-image-right marginTop">
-      <div class="col s12 m6 l8 paragraph">
-        <h1 class="names">Yag & Cookie</h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore
-        magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse in. Consectetur adipiscing elit duis
-        tristique sollicitudin nibh sit amet. Diam sit amet nisl suscipit.
-      </div>
-      <div class="col s12 m6 l4 image">
-        <div id="f1_container">
-          <div id="f1_card" class="shadow">
-            <div class="front face">
-              <img class="circular--square" src="assets/images/cookiedrinkingsmoothie-cropped.jpg"
-                class="responsive-img" alt="Pup">
-            </div>
-            <div class="back face center">
-              <img class="circular--square" src="assets/images/yag.jpg" class="responsive-img" alt="Pup">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row row-image-left">
-      <div class="col s12 m6 l4 image">
-        <div id="f1_container">
-          <div id="f1_card" class="shadow">
-            <div class="front face">
-              <img class="circular--square" src="assets/images/athena-cropped.jpg" class="responsive-img" alt="Pup">
-            </div>
-            <div class="back face center">
-              <img class="circular--square" src="assets/images/miguel.jpg" class="responsive-img" alt="Pup">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s12 m6 l8 paragraph">
-        <h1 class="names">Miguel & Athena</h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse in. Consectetur adipiscing elit
-        duis tristique sollicitudin nibh sit amet. Diam sit amet nisl suscipit.
-      </div>
-    </div>
-
-    <div class="row row-image-right">
-      <div class="col s12 m6 l8 paragraph">
-        <h1 class="names">Steph & Tylie</h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse in. Consectetur adipiscing elit
-        duis tristique sollicitudin nibh sit amet. Diam sit amet nisl suscipit.
-      </div>
-      <div class="col s12 m6 l4 image">
-        <div id="f1_container">
-          <div id="f1_card" class="shadow">
-            <div class="front face">
-              <img class="circular--square" src="assets/images/tylie-cropped.png" class="responsive-img" alt="Pup">
-            </div>
-            <div class="back face center">
-              <img class="circular--square" src="assets/images/IMG_9321 (1).jpg" class="responsive-img" alt="Pup">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="contact-us">
-    <div class="container wrapper">
-      <div class="row">
-        <div class="col s12 xl6 contact-text">
-          <p class="heading">Drop us a line!</p>
-          <p>We'd love to hear from you!</p>
-          <img src="assets/images/doggo-01.png" alt="dog illustration" class="circle responsive-image"
-            id="illustration-contact">
-        </div>
-        <div class="col s12 xl6">
-          <div class="row input-field">
-            <div>
-              <input placeholder="Jane" id="first_name" type="text" class="validate form">
-              <label for="first_name">First Name</label>
-            </div>
-            <div>
-              <input placeholder="Smith" id="last_name" type="text" class="validate form">
-              <label for="last_name">Last Name</label>
-            </div>
-            <div>
-              <input placeholder="janesmith@gmail.com" type="email" class="validate form">
-              <label for="email">E-mail</label>
-            </div>
-            <form action="post">
-              <textarea id="textarea1" class="materialize-textarea form"></textarea>
-              <label for="textarea1">Textarea</label>
-            </form>
-            <a class="waves-effect waves-light btn-large submit-button"><i class="fas fa-paw"></i> Submit </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer id="tech-used">
-    <div class="container wrapper">
-      <div class="row">
-        <div class="col s12 logo-wrapper">
-          <p class="heading">Technologies Used:</p>
+    <!-- Main div with project logo and introduction -->
+    <div id="container" class="container">
+      <div class="row content">
+        <div class="col s12 l6" id="content-text">
+          <h1>Welcome to Pupper!</h1>
           <hr class="divider-line">
-          <img class="logos" src="assets/images/html5-logo.png" alt="HTML5 logo">
-          <img class="logos" src="assets/images/css3-logo.png" alt="CSS3 logo">
-          <img class="logos" src="assets/images/js-logo.png" alt="JS logo">
-          <img class="logos"
-            src="assets/images/kisspng-firebase-cloud-messaging-google-developers-softwar-5ae1d9fda49409.7709198715247508456741.png"
-            alt="Firebase logo">
-          <img class="logos" src="assets/images/materialize-seeklogo.com-01.png" alt="materialize logo">
+          <p id="slogan">The Ultimate Pet Entertainment TV</p>
+          <!-- Gave a pulse on the Demo button -->
+          <a href="#carousel-main" class="waves-effect waves-light btn-large watch-button pulse"><i
+              class="fas fa-paw"></i>
+            Watch the
+            Demo!</a>
+        </div>
+        <!-- MAIN IMAGE -->
+        <div class="col s12 l6">
+          <div class="card-image">
+            <!-- Wave effect added onto image -->
+            <a class="waves-effect waves-light circle" href="#">
+              <img src="assets/images/pupper.png" class=" responsive-image" id="illustration-main" alt="Pupper logo">
+            </a>
+          </div>
+          <!-- MAIN IMAGE -->
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <div><a href="#about-us"><i id="scroll-icon" class="material-icons">expand_more</i></a></div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="row social-media-div">
-      <div class="col s12">
-        <div class="social-media">
-          <p>Copyright by AwesomePossum, 2019</p>
-          <p>Share the <i class="fas fa-heart heart-logo"></i> :
-            <a href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank"><i
-                class="fab fa-facebook-square social-media-logos"></i></a>
-            <a
-              href="http://twitter.com/share?text=text goes here&url=http://url goes here&hashtags=hashtag1,hashtag2,hashtag3"><i
-                class="fab fa-twitter social-media-logos"></i></a>
-            <a href="http://pinterest.com/pin/create/button/?url=/node/[nid]&description=[title]"><i
-                class="fab fa-pinterest social-media-logos"></i></a>
-            <a href="http://www.tumblr.com/share/link?url=[URL]&amp;name=[title]&amp;description=[content]"><i
-                class="fab fa-tumblr social-media-logos"></i></a>
-          </p>
+
+    <!-- Main div -->
+    <div id="container" class="container">
+      <div class="row content">
+        <div class="col s12 l6" id="content-text">
+          <h1>Hello <span id="username"></span><span id="petname"></span>!</h1>
+          <hr class="divider-line">
+          <p id="slogan">Welcome to your personalized Pet TV!</p>
+        </div>
+        <!-- MAIN IMAGE -->
+        <div class="col s12 l6">
+          <div class="card-image">
+            <!-- Wave effect added onto image -->
+            <a class="waves-effect waves-light circle" href="#">
+              <img src="assets/images/pupper.png" class=" responsive-image" id="illustration-main" alt="Pupper logo">
+            </a>
+          </div>
+          <!-- MAIN IMAGE -->
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <div><a href="#about-us"><i id="scroll-icon" class="material-icons">expand_more</i></a></div>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
 
-  <!-- jquery CDN -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <div class="container wrapper" id="browse">
+      <h3>Browse Videos</h3>
+      <hr class="divider-line">
+      <div id="carousel-main">
+        <nav>
+          <!-- added light blue to the searchbar -->
+          <div class="nav-wrapper">
+            <form id="search-bar">
+              <!-- added light purple to the searchbar -->
+              <div class="input-field pink accent-2 z-depth-3" id="youtube-search">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+        </nav>
+        <div class="slick-carousel">
+          <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ry2b_XLAXR8"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
 
-  <!-- Slick Carousel JS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <a class="waves-effect waves-light btn-large favorite-button"><i class="fas fa-heart"></i> Add to Favorites </a>
+      </div>
+    </div>
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <div class="container wrapper" id="favorites">
+      <h3>Favorite Videos</h3>
+      <hr class="divider-line">
+      <div id="favorite-videos">
+      </div>
+    </div>
+    <div class="container wrapper" id="playlist">
+      <h3>Playlist</h3>
+      <hr class="divider-line">
+    </div>
 
-  <!-- Youtube API-->
-  <script src="https://apis.google.com/js/client.js"></script>
+    <div class="container wrapper" id="about-us">
+      <h3>About Us</h3>
+      <hr class="divider-line">
+      <div class="row row-image-left">
+        <div class="col s12 m6 l4 image">
+          <div id="f1_container">
+            <div id="f1_card" class="shadow">
+              <div class="front face">
+                <img class="circular--square" src="assets/images/West.png" class="responsive-img" alt="Pup">
+              </div>
+              <div class="back face center">
+                <img class="circular--square" src="assets/images/nico.jpg" class="responsive-img" alt="Pup">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l8 paragraph">
+          <h1 class="names">Nico & West</h1>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse in. Consectetur adipiscing elit duis
+          tristique sollicitudin nibh sit amet. Diam sit amet nisl suscipit.
+        </div>
+      </div>
 
-  <!-- our CDN -->
-  <!-- <script src="assets/logic.js"></script> -->
+      <div class="row row-image-right marginTop">
+        <div class="col s12 m6 l8 paragraph">
+          <h1 class="names">Yag & Cookie</h1>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse in. Consectetur adipiscing elit duis
+          tristique sollicitudin nibh sit amet. Diam sit amet nisl suscipit.
+        </div>
+        <div class="col s12 m6 l4 image">
+          <div id="f1_container">
+            <div id="f1_card" class="shadow">
+              <div class="front face">
+                <img class="circular--square" src="assets/images/cookiedrinkingsmoothie-cropped.jpg"
+                  class="responsive-img" alt="Pup">
+              </div>
+              <div class="back face center">
+                <img class="circular--square" src="assets/images/yag.jpg" class="responsive-img" alt="Pup">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <!-- browserified logic.js -->
-  <script src="assets/bundle.js"></script>
+      <div class="row row-image-left">
+        <div class="col s12 m6 l4 image">
+          <div id="f1_container">
+            <div id="f1_card" class="shadow">
+              <div class="front face">
+                <img class="circular--square" src="assets/images/athena-cropped.jpg" class="responsive-img" alt="Pup">
+              </div>
+              <div class="back face center">
+                <img class="circular--square" src="assets/images/miguel.jpg" class="responsive-img" alt="Pup">
+              </div>
+            </div>
+          </div>
+        </div>
 
-</body>
+        <div class="col s12 m6 l8 paragraph">
+          <h1 class="names">Miguel & Athena</h1>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Sed risus pretium quam vulputate dignissim suspendisse in. Consectetur adipiscing elit
+          duis tristique sollicitudin nibh sit amet. Diam sit amet nisl suscipit.
+        </div>
+      </div>
+
+      <div class="row row-image-right">
+        <div class="col s12 m6 l8 paragraph">
+          <h1 class="names">Steph & Tylie</h1>
+          Stephanie is a huge animal lover, specifically her Cockapoo, Tylie. She is a newbie to the world of web
+          development but has the drive to forge her path with badass gusto. Combining her interest in coding with
+          pets was a perfect venture to work on so working on Pupper has been an enjoyable experience.
+        </div>
+        <div class="col s12 m6 l4 image">
+          <div id="f1_container">
+            <div id="f1_card" class="shadow">
+              <div class="front face">
+                <img class="circular--square" src="assets/images/tylie-cropped.png" class="responsive-img" alt="Pup">
+              </div>
+              <div class="back face center">
+                <img class="circular--square" src="assets/images/IMG_9321 (1).jpg" class="responsive-img" alt="Pup">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-us">
+      <div class="container wrapper">
+        <div class="row">
+          <div class="col s12 xl6 contact-text">
+            <p class="heading">Drop us a line!</p>
+            <p>We'd love to hear from you!</p>
+            <img src="assets/images/doggo-01.png" alt="dog illustration" class="circle responsive-image"
+              id="illustration-contact">
+          </div>
+          <div class="col s12 xl6">
+            <div class="row input-field">
+              <div>
+                <input placeholder="Jane" id="first_name" type="text" class="validate form">
+                <label for="first_name">First Name</label>
+              </div>
+              <div>
+                <input placeholder="Smith" id="last_name" type="text" class="validate form">
+                <label for="last_name">Last Name</label>
+              </div>
+              <div>
+                <input placeholder="janesmith@gmail.com" type="email" class="validate form">
+                <label for="email">E-mail</label>
+              </div>
+              <form action="post">
+                <textarea id="textarea1" class="materialize-textarea form"></textarea>
+                <label for="textarea1">Textarea</label>
+              </form>
+              <a class="waves-effect waves-light btn-large submit-button"><i class="fas fa-paw"></i> Submit </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="tech-used">
+      <div class="container wrapper">
+        <div class="row">
+          <div class="col s12 logo-wrapper">
+            <p class="heading">Technologies Used:</p>
+            <hr class="divider-line">
+            <img class="logos" src="assets/images/html5-logo.png" alt="HTML5 logo">
+            <img class="logos" src="assets/images/css3-logo.png" alt="CSS3 logo">
+            <img class="logos" src="assets/images/js-logo.png" alt="JS logo">
+            <img class="logos"
+              src="assets/images/kisspng-firebase-cloud-messaging-google-developers-softwar-5ae1d9fda49409.7709198715247508456741.png"
+              alt="Firebase logo">
+            <img class="logos" src="assets/images/materialize-seeklogo.com-01.png" alt="materialize logo">
+          </div>
+        </div>
+      </div>
+      <div class="row social-media-div">
+        <div class="col s12">
+          <div class="social-media">
+            <p>Copyright by AwesomePossum, 2019</p>
+            <p>Share the <i class="fas fa-heart heart-logo"></i> :
+              <a href="https://www.facebook.com/sharer/sharer.php?u=#url" target="_blank"><i
+                  class="fab fa-facebook-square social-media-logos"></i></a>
+              <a
+                href="http://twitter.com/share?text=text goes here&url=http://url goes here&hashtags=hashtag1,hashtag2,hashtag3"><i
+                  class="fab fa-twitter social-media-logos"></i></a>
+              <a href="http://pinterest.com/pin/create/button/?url=/node/[nid]&description=[title]"><i
+                  class="fab fa-pinterest social-media-logos"></i></a>
+              <a href="http://www.tumblr.com/share/link?url=[URL]&amp;name=[title]&amp;description=[content]"><i
+                  class="fab fa-tumblr social-media-logos"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Slick Carousel JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Youtube API-->
+    <script src="https://apis.google.com/js/client.js"></script>
+
+    <!-- our CDN -->
+    <!-- <script src="assets/logic.js"></script> -->
+
+    <!-- browserified logic.js -->
+    <script src="assets/bundle.js"></script>
+
+  </body>
 
 </html>
